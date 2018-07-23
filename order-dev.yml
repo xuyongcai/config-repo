@@ -8,6 +8,14 @@ spring:
     password: 17307867
   jpa:
     show-sql: true
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
+  redis:
+    port: 6379
+    host: localhost
     
 server:
   port: 6002
