@@ -1,5 +1,5 @@
 spring:
   application:
-    name: order
+    name: kk
 env:
   dev
