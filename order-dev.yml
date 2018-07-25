@@ -14,7 +14,43 @@ spring:
   redis:
     port: 6379
     host: localhost
-    
+  cloud:
+    stream:
+      bindings:
+        myMessage:    #消息的名字
+          group: order  #消息的分组,组内只有一个事例可以接收到消息，用于分布式开发
+          content-type: application/json  #在mq中以json形式展示发送的消息
+  zipkin:
+    base-url: http://zipkin:9411/
+  sleuth:
+    sampler:
+      probability: 1
+      
+   
+feign:
+  hystrix:
+    enabled: true
+management:
+  context-path: /
+  
+#使用配置来设置hystrixcommand属性时，别忘记在对应的方法配合加上@HystrixCommand，不然不生效
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            imeoutInMilliseconds: 3000
+
+logging:
+  level:
+     org.springframework.cloud.netflix.feign: debug
+   
 server:
   port: 6002
 env:  dev
