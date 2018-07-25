@@ -17,5 +17,4 @@ spring:
     
 server:
   port: 6002
-env:
-  dev
+env:  dev
