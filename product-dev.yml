@@ -17,3 +17,7 @@ spring:
 env: dev 
 server:
   port: 6001
+  
+logging:
+  level:
+   org.springframework.cloud.netflix.feign: debug
