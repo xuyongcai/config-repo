@@ -17,6 +17,9 @@ spring:
     host: localhost
     
 env: devhh
+boy:
+  age:  12
+  name: xiaochai
 server:
   port: 6001
   
