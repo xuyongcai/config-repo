@@ -16,10 +16,10 @@ spring:
     port: 6379
     host: localhost
     
-env: devhh
+env: dev
 boy:
-  age:  12
-  name: xiaochai
+  age:  15
+  name: xiao
 server:
   port: 6001
   
