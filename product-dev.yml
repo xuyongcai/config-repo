@@ -16,9 +16,9 @@ spring:
     port: 6379
     host: localhost
     
-env: dev
+env: devj
 boy:
-  age:  152
+  age:  15266
   name: xiao
 server:
   port: 6001
