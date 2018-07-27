@@ -18,7 +18,7 @@ spring:
     
 env: dev
 boy:
-  age:  183
+  age:  18300
   name: xiao
 server:
   port: 6001
