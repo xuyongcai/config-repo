@@ -47,6 +47,12 @@ hystrix:
           thread:
             imeoutInMilliseconds: 3000
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
 logging:
   level:
      org.springframework.cloud.netflix.feign: debug
