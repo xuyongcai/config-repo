@@ -23,6 +23,13 @@ ribbon:
   ConnectTimeout: 10000
 
 
+#暴露actuator接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  
+
 server:
   port: 6000
 env: dev
