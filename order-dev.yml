@@ -30,8 +30,8 @@ spring:
 feign:
   hystrix:
     enabled: true
-management:
-  context-path: /
+#management:
+#  context-path: /
   
 #使用配置来设置hystrixcommand属性时，别忘记在对应的方法配合加上@HystrixCommand，不然不生效
 hystrix:
